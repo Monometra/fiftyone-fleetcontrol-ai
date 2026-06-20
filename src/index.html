@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetControlAI - Intelligence Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="nav-logo">🌌</span>
+            <h1>FleetControlAI</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+            <a href="admin.html" class="nav-link">Admin Center</a>
+            <a href="driver.html" class="nav-link">Driver Portal</a>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <section class="hero" style="animation: fadeInDown 0.8s ease-out;">
+            <h2>Intelligence & Safety Center</h2>
+            <p class="hero-desc">
+                Next-generation real-time fleet supervision. Monitor routes, predict events, and interact with the FleetControlAI capabilities via the embedded intelligence module below.
+            </p>
+        </section>
+
+        <!-- FiftyOne App Link -->
+        <div class="fo-container" style="animation: fadeInUp 0.8s ease-out 0.2s both;">
+            <div class="card" style="text-align: center; padding: 2rem;">
+                <h3>FleetControlAI Intelligence Module</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">The FiftyOne App runs on <strong>http://localhost:5151</strong>. Click the button below to open it in a new tab.</p>
+                <a href="http://localhost:5151" target="_blank" class="btn btn-primary" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open FiftyOne App</a>
+            </div>
+        </div>
+
+        <section class="grid-3col" style="animation: fadeInUp 0.8s ease-out 0.4s both;">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Real-Time V2X</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 15px;">Advanced communication protocols ensuring sub-millisecond latency between fleet assets and the control center.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Geo-Spatial Analysis</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 15px;">Dynamic geofencing and spatial anomaly detection to guarantee compliance and safety in high-density urban zones.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Predictive AI</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 15px;">Machine learning models that predict traffic delays, safety incidents, and optimal routing adjustments autonomously.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

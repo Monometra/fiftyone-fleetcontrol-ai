@@ -1,0 +1,133 @@
+descripci_n_general:
+  _text: "Descripción general"
+  paragraphs[1]: "FleetControlAI es una propuesta de sistema inteligente de prevención para vehículos particulares, flotas y transporte público. Su objetivo es detectar conductas de riesgo, analizar el contexto con inteligencia artificial y actuar de forma escalonada antes de que ocurra un accidente."
+  problema_que_resuelve:
+    _text: "Problema que resuelve"
+    paragraphs[2]: "Actualmente, muchos accidentes y situaciones críticas de transporte están relacionados con:", "La mayoría de sistemas tradicionales registran lo ocurrido después del incidente. Esta propuesta busca prevenir el riesgo antes de que se materialice."
+    lists[1]{0,1,2,3,4,5,6}:
+      "Conducción bajo efectos del alcohol.","Uso del celular mientras se conduce.","Fatiga, somnolencia o microsueños.","Exceso de velocidad.","Desvíos no autorizados de rutas.","Violencia dentro del vehículo.","Falta de supervisión en transporte público."
+  arquitectura_general:
+    _text: "Arquitectura general"
+    1__m_dulo_de_visi_n_artificial:
+      _text: "1. Módulo de visión artificial"
+      paragraphs[1]: "Una cámara interior monitorea continuamente al conductor y al entorno interno del vehículo."
+      eventos_que_puede_detectar:
+        _text: "Eventos que puede detectar"
+        lists[1]{0,1,2,3,4,5,6,7}:
+          "Uso de celular.","Consumo de cigarrillo.","Consumo de alcohol.",Somnolencia.,"Ojos cerrados durante varios segundos.","Distracción visual.","Conducta agresiva.","Peleas dentro del vehículo."
+      rol_de_la_ia:
+        _text: "Rol de la IA"
+        paragraphs[1]: "La inteligencia artificial no actúa de manera inmediata ante cualquier detección. Primero sigue un proceso de validación:"
+        lists[1]{0,1,2,3}:
+          "La cámara detecta un posible evento.","La IA analiza el contexto.","La IA determina un nivel de confianza.","Solo si se supera un umbral definido se genera una alerta."
+      ejemplo_de_decisi_n_por_confianza:
+        _text: "Ejemplo de decisión por confianza"
+        lists[1]{0,1,2}:
+          "40% de confianza: ignorar.","70% de confianza: advertencia.","90% de confianza: reporte."
+        paragraphs[1]: "Este enfoque reduce falsos positivos y mejora la precisión operativa."
+    2__m_dulo_gps_inteligente:
+      _text: "2. Módulo GPS inteligente"
+      paragraphs[3]: "El vehículo conoce en tiempo real:", "La IA consulta además:", "Con esto puede inferir reglas como: “Este vehículo se encuentra en una zona de 30 km/h”."
+      lists[2]{0,1,2}:
+        "Su ubicación.","La ruta asignada.","Los límites de velocidad aplicables."
+        "Base de datos vial.",Señalización.,"Información cartográfica y de mapas."
+      respuesta_seg_n_velocidad_detectada:
+        _text: "Respuesta según velocidad detectada"
+        lists[1]{0,1,2}:
+          "35 km/h: advertencia suave.","45 km/h: advertencia fuerte.","Más de 50 km/h durante tiempo prolongado: reporte."
+    3__sistema_escalonado_de_alertas:
+      _text: "3. Sistema escalonado de alertas"
+      paragraphs[1]: "El sistema no castiga inmediatamente; responde por niveles según la gravedad y persistencia del evento."
+      nivel_1__advertencia_sonora:
+        _text: "Nivel 1: Advertencia sonora"
+        paragraphs[1]: "Ejemplo de mensaje:"
+      nivel_2__advertencia_visual:
+        _text: "Nivel 2: Advertencia visual"
+        paragraphs[1]: "Ejemplo en pantalla:"
+      nivel_3__reporte_autom_tico:
+        _text: "Nivel 3: Reporte automático"
+        paragraphs[1]: "Se envía a la central o plataforma:"
+        lists[1]{0,1,2,3}:
+          Ubicación.,Video.,Hora.,"Tipo de infracción."
+      nivel_4__intervenci_n_del_veh_culo:
+        _text: "Nivel 4: Intervención del vehículo"
+        paragraphs[1]: "Se reserva únicamente para casos extremos y de alto riesgo."
+    4__integraci_n_con_veh_culos_el_ctricos:
+      _text: "4. Integración con vehículos eléctricos"
+      paragraphs[1]: "En vehículos eléctricos el sistema puede intervenir de forma más directa al conectarse con el controlador del vehículo."
+      casos_de_intervenci_n:
+        _text: "Casos de intervención"
+        lists[1]{0,1}:
+          "Exceso de velocidad grave: se limita la potencia.","Restricción de velocidad máxima según riesgo, por ejemplo 30 km/h o 50 km/h."
+      caso_de_alcohol_confirmado:
+        _text: "Caso de alcohol confirmado"
+        paragraphs[2]: "La IA:", "El vehículo no debe apagarse de golpe, ya que eso podría provocar un accidente mayor."
+        lists[1]{0,1,2,3,4,5}:
+          "Verifica evidencia.","Solicita validación adicional.","Si se confirma el estado de riesgo, activa modo seguro.","Busca un lugar adecuado para detener el vehículo.","Activa luces de emergencia.","Contacta autoridades o a la central."
+    5__detector_de_fatiga:
+      _text: "5. Detector de fatiga"
+      paragraphs[1]: "Este módulo es especialmente útil para buses y transporte de larga duración."
+      sensores_considerados:
+        _text: "Sensores considerados"
+        lists[1]{0,1,2,3}:
+          "Cámara facial.","Ritmo cardíaco.","Movimiento de ojos.","Frecuencia de parpadeo."
+      riesgos_que_detecta:
+        _text: "Riesgos que detecta"
+        lists[1]{0,1,2}:
+          Microsueños.,Fatiga.,"Estrés extremo."
+      respuesta_ante_peligro:
+        _text: "Respuesta ante peligro"
+        lists[1]{0,1,2}:
+          "Activación de alarma.","Aviso a la central.","Solicitud de relevo del conductor."
+    6__alcohol_metro_inteligente:
+      _text: "6. Alcoholímetro inteligente"
+      paragraphs[1]: "Este componente es ideal para:"
+      lists[1]{0,1,2}:
+        Buses.,"Transporte escolar.","Transporte intermunicipal."
+      flujo_de_operaci_n:
+        _text: "Flujo de operación"
+        lists[1]{0,1,2,3,4,5}:
+          "El conductor llega al vehículo.","Realiza la prueba de alcohol.","El resultado se registra.","El vehículo se habilita si la prueba es aprobada.","Si falla, el vehículo no puede arrancar.","La central recibe una alerta automática."
+    7__versi_n_para_transporte_p_blico:
+      _text: "7. Versión para transporte público"
+      paragraphs[1]: "Esta es la versión más completa del sistema."
+      centro_de_control:
+        _text: "Centro de control"
+        paragraphs[1]: "Permite monitorear:"
+        lists[1]{0,1,2,3,4}:
+          Ubicación.,Ruta.,Velocidad.,"Estado del conductor.","Tiempo estimado de llegada."
+      alertas_de_ruta:
+        _text: "Alertas de ruta"
+        paragraphs[3]: "Si el vehículo sale de la ruta establecida, la IA primero solicita una justificación.", "Opciones posibles:", "Si no existe respuesta o el desvío parece sospechoso, se notifica a la central."
+        lists[1]{0,1,2,3}:
+          Accidente.,Obra.,Emergencia.,"Orden de la empresa."
+    8__detecci_n_de_emergencias:
+      _text: "8. Detección de emergencias"
+      paragraphs[1]: "La IA también puede detectar eventos críticos como:"
+      lists[1]{0,1,2,3,4}:
+        Choques.,"Frenadas bruscas.",Volcamientos.,Peleas.,"Gritos de auxilio."
+      acciones_autom_ticas:
+        _text: "Acciones automáticas"
+        lists[1]{0,1,2,3}:
+          "Guardar video.","Enviar ubicación.","Notificar a la central.","Contactar servicios de emergencia."
+  modelo_de_negocio:
+    _text: "Modelo de negocio"
+    versi_n_hogar:
+      _text: "Versión hogar"
+      paragraphs[2]: "Dirigida a vehículos particulares mediante suscripción.", "Incluye:"
+      lists[1]{0,1,2}:
+        "Monitoreo por IA.",GPS.,Alertas.
+    versi_n_empresas:
+      _text: "Versión empresas"
+      paragraphs[2]: "Pensada para:", "Modelo de cobro: pago mensual por vehículo."
+      lists[1]{0,1,2,3}:
+        Taxis.,Flotas.,Mensajería.,"Transporte escolar."
+    versi_n_premium:
+      _text: "Versión premium"
+      paragraphs[2]: "Dirigida a:", "Incluye:"
+      lists[2]{0,1,2}:
+        "Buses urbanos.","Empresas intermunicipales.","Transporte masivo."
+        "Centro de control.",Dashboard.,Estadísticas.
+  valor_diferencial:
+    _text: "Valor diferencial"
+    paragraphs[1]: "La propuesta se diferencia de los sistemas tradicionales porque no solo registra incidentes, sino que previene eventos peligrosos antes de que ocurran mediante visión artificial, análisis contextual, validación por confianza y respuestas escalonadas."

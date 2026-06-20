@@ -1,0 +1,12 @@
+name: "@copiloto/fleet-control-ai"
+version: "1.0.0"
+description: "Panel de control FleetControlAI - Transporte Inteligente y Seguridad Vial"
+url: "https://github.com/"
+
+fiftyone:
+  version: ">=1.17.0"
+
+panels:
+  - copiloto_dashboard
+  - copiloto_geo_fence
+  - copiloto_fleet_stats
