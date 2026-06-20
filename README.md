@@ -11,7 +11,7 @@ Las empresas de transporte deben garantizar operaciones seguras, eficientes y tr
 | Rubrica | Implementacion |
 |---|---|
 | **Supervision inteligente de flotas** | Deteccion de objetos (vehiculos, peatones, senales) en cada captura con bounding boxes y estadisticas por zona via FiftyOne + grafico de barras en dashboard |
-| **Comunicacion inteligente con centros de control** | FiftyOne App como torre de control con mapa interactivo + plugin FleetControlAI con 3 paneles + dashboard web independiente en `src/` |
+| **Comunicacion inteligente con centros de control** | FiftyOne App como torre de control con mapa interactivo + plugin **@copiloto/fleet-control-ai** con 3 paneles + dashboard web independiente en `src/` |
 | **Monitoreo de velocidad y cumplimiento de rutas** | Geo-cerca virtual (Manhattan) que filtra capturas dentro/fuera del perimetro autorizado con `geo_within()` |
 | **Prediccion de retrasos y eventos operativos** | Analisis de densidad de objetos por zona geografica (Times Square proximity), distribucion de clases detectadas, y mapa de calor de ubicaciones |
 
@@ -173,7 +173,7 @@ fiftyone app launch
 
 El plugin `@copiloto/guardian-drive-ai` proporciona 3 paneles personalizados dentro de la FiftyOne App:
 
-### 1. FleetControlAI Dashboard
+### 1. FleetControlAI Dashboard (`@copiloto/fleet-control-ai`)
 Metricas generales: muestras, detecciones totales, promedio por captura, y grafico de barras con distribucion de clases detectadas.
 
 ### 2. FleetControlAI Geo-cerca
